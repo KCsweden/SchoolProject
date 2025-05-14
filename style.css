@@ -1,0 +1,80 @@
+body {
+    margin: 0; /* Tar bort standardmarginaler */
+    font-family: Arial, sans-serif;
+    background-color: #E3E6EB;
+}
+
+.container {
+    display: flex; /* Lägger sidebar och main-content bredvid varandra */
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Fyller hela skärmens höjd */
+}
+button {
+    background-color: #afb3af; /* Grön bakgrundsfärg */
+    border: none; /* Ingen kantlinje */
+    color: white; /* Vit textfärg */
+    padding: 15px 32px; /* Inre marginaler */
+    text-align: center; /* Centrera texten */
+    text-decoration: none; /* Ingen understrykning */
+    display: inline-block; /* Gör knappen inline-block */
+    font-size: 16px; /* Textstorlek */
+    margin: 4px 2px; /* Yttre marginaler */
+    cursor: pointer;
+    width: 200px;
+ } /* Ändrar muspekaren */
+.sidebar {
+    background-color: #E3E6EB;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sidebar h1 {
+    text-align: right; /* Centrera rubriken */
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+    margin-left: 65px; /* Lägger till vänstermarginal */
+}
+
+.sidebar ul {
+    list-style: none; /* Tar bort punkter från listan */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none; /* Tar bort understrykning från länkar */
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #444444; /* Ändrar färg vid hover */
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-left: 80px;
+    margin-top: 90px;
+}
