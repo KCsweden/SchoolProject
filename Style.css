@@ -1,0 +1,70 @@
+.sidebar {
+    background-color: #e3e6eb;
+}
+.split-container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+.left-side {
+    flex: 1; 
+    background-color: #e3e6eb; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e6eb;
+    overflow: hidden;
+    position: relative;
+}
+.right-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: auto;
+}
+input[type=text], input[type=password] {
+    width: 60%; 
+    padding: 12px 20px;
+    margin: 8px 0; 
+    display: block; 
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+    border-radius: 4px; 
+}
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+}
+button {
+    background-color: #9da09d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+}
+button:hover {
+    opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+    .split-container {
+        flex-direction: column; 
+    }
+
+    .left-side, .right-side {
+        flex: none;
+        width: 100%; 
+        height: 50vh; 
+    }
+}
