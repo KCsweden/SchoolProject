@@ -14,11 +14,11 @@ function login() {
     if (users[username] && users[username].password === password) {
         const userRole = users[username].role;
         if (userRole === "admin") {
-            window.location.href = "HtmlPage2.html";
+            window.location.href = "Admin.html";
         } else if (userRole === "teacher") {
-            window.location.href = "HtmlPage2.html";
+            window.location.href = "Lärarvy.html";
         } else if (userRole === "student") {
-            window.location.href = "HtmlPage3.html";
+            window.location.href = "Elevsida.html";
         } else {
             errorMessage.textContent = "Wrong username or password.";
         }
