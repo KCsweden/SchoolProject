@@ -1,0 +1,121 @@
+/* =============================
+   Allmänna inställningar för hela sidan
+   ============================= */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* =============================
+   Huvudlayout – delar upp sidan i vänster och höger sektion
+   ============================= */
+.layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* =============================
+   Vänstra sektionen – formulär (grå bakgrund)
+   ============================= */
+.left-section {
+    width: 25%;
+    background-color: #aaabac;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* =============================
+   Högra sektionen – bild och eventuell information (ljusgrå bakgrund)
+   ============================= */
+.right-section {
+    width: 75%;
+    background-color: #E3E6EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =============================
+   Formulärcontainer (wrapper runt hela formuläret)
+   ============================= */
+.container {
+    padding: 25px;
+    width: 100%;
+    position: static;
+    min-height: auto;
+}
+
+/* =============================
+   Formuläret – layout och avstånd
+   ============================= */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;          
+    margin-left: 20px;  
+    margin-right: 80px; 
+}
+
+/* =============================
+   Formulärets rader (etikett + meny)
+   ============================= */
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/* =============================
+   Etiketter – texten till vänster om varje meny
+   ============================= */
+label {
+    width: 120px;      /* Säkerställer att alla dropdowns linjeras lodrätt */
+    text-align: right; /* Justerar etiketten till höger, så den möter dropdownen */
+}
+
+/* =============================
+   Dropdown-wrapper – lägger dropdownen i en egen "låda"
+   ============================= */
+.select-wrapper {
+    width: 250px; 
+}
+
+/* =============================
+   Dropdown-menyerna stil och storlek
+   ============================= */
+select {
+    width: 100%;         
+    height: 35px;        
+    font-size: 16px;     
+}
+
+/* =============================
+   Skicka-knapp
+   ============================= */
+input[type="submit"] {
+    width: 200px;
+    height: 45px;
+    align-self: center;  
+    font-size: 16px;
+}
+
+/* =============================
+   Bilden i högra sektionen
+   ============================= */
+.image-container img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+
+

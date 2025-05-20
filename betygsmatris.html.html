@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <!-- ========== Metadata och länkar till CSS/JS ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Länkar till extern CSS och JavaScript -->
+    <link rel="stylesheet" type="text/css" href="betygsmatriscss.css">
+    <script src="betygsmatris.js" defer></script>
+
+    <title>Betygsmatris</title>
+</head>
+<body>
+
+    <!-- ========== Layoutstruktur (vänster: formulär, höger: bild) ========== -->
+    <div class="layout">
+
+        <!-- ========== Vänstra sektionen med formulär ========== -->
+        <div class="left-section">
+            <div class="container">
+                <h1>Betygsmatris</h1>
+
+                <!-- ========== Formulär för att välja betygsinformation ========== -->
+                <form name="form1" id="form1" action="/action_page.php">
+                    
+                    <!-- === Välj student === -->
+                    <div class="form-group">
+                        <label for="student">Student:</label>
+                        <div class="select-wrapper">
+                            <select name="student" id="student">
+                                <option value="" selected="selected">Välj student</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- === Välj ämne === -->
+                    <div class="form-group">
+                        <label for="subject">Ämne:</label>
+                        <div class="select-wrapper">
+                            <select name="subject" id="subject">
+                                <option value="" selected="selected">Välj ämne</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- === Välj betyg === -->
+                    <div class="form-group">
+                        <label for="grade">Betyg:</label>
+                        <div class="select-wrapper">
+                            <select name="grade" id="grade">
+                                <option value="" selected="selected">Välj betyg</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- === Välj kommentar === -->
+                    <div class="form-group">
+                        <label for="comment">Kommentar:</label>
+                        <div class="select-wrapper">
+                            <select name="comment" id="comment">
+                                <option value="" selected="selected">Välj kommentar</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- === Skicka-knapp === -->
+                    <input type="submit" value="Skicka">  
+                </form>
+            </div>
+        </div>
+
+        <!-- ========== Högra sektionen med bild/logga ========== -->
+        <div class="right-section">
+            <div class="image-container">
+                <img src="C:\Users\morga\Desktop\Molntjänster\Projektet\Bilder\portalen_logga.png" alt="Portalen logga">
+            </div>
+        </div>
+
+    </div> <!-- layout -->
+</body>
+</html>
