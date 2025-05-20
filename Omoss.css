@@ -6,13 +6,13 @@ body {
 
 .container {
     display: flex;
-    height: 90vh;
+    height: 100vh;
 }
 
 .sidebar {
     background-color: #aaabac;
     padding: 20px;
-    width: 600px;
+    width: 375px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -20,7 +20,7 @@ body {
 
 .main-content {
     flex: 1;
-    background-color: #F5F6F8;
+    background-color: #E3E6EB;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,8 +30,8 @@ body {
     .main-content img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
-        max-width: 1500px;
+        object-fit: contain; /* eller 'cover' om du vill fylla hela ytan */
+        max-width: 1500px; /* valfri gräns så bilden inte blir för enorm */
         max-height: 100vh;
     }
 
@@ -61,3 +61,4 @@ body {
     margin-bottom: 30px;
     color: #333;
 }
+
