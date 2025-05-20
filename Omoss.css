@@ -6,12 +6,12 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
+    height: 90vh;
 }
 
 .sidebar {
     background-color: #aaabac;
-    padding: 40px;
+    padding: 20px;
     width: 600px;
     display: flex;
     flex-direction: column;
