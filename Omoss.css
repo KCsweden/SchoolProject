@@ -11,8 +11,8 @@ body {
 
 .sidebar {
     background-color: #aaabac;
-    padding: 20px;
-    width: 25%;
+    padding: 40px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
